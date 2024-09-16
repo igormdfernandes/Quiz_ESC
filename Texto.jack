@@ -1,0 +1,18 @@
+class Texto {
+    function void centerText(String text) {
+        var int screenWidth, textLength, spacesNeeded, i;
+
+        let screenWidth = 512;
+        let textLength = text.length() * 8;
+        let spacesNeeded = (screenWidth - textLength) / 16;
+        
+        let i = 0;
+        while (i < spacesNeeded) {
+            do Output.printString(" ");
+            let i = i + 1;
+        }
+        
+        do Output.printString(text);
+        return;
+    }
+}

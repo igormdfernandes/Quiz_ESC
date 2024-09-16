@@ -1,0 +1,98 @@
+class Tela {
+    function void clearScreen() {
+        var int y;
+        let y = 0;
+
+        while (y < 256) {
+            do Screen.setColor(false);
+            do Screen.drawLine(0, y, 511, y);
+            let y = y + 1;
+        }
+        return;
+    }
+
+    function void writeQ1() {
+        do Texto.centerText("1. Qual o coletivo de lobos?");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("A. Colmeia");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("B. Alcateia");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("C. Manada");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("D. Bando");
+        return;
+    }
+
+    function void writeQ2() {
+        do Texto.centerText("1. Qual o maior planeta do sistema solar?");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("A. Urano");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("B. Netuno");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("C. Saturno");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("D. Jupiter");
+        return;
+    }
+
+    function void writeQ3() {
+        do Texto.centerText("1. Qual o coletivo de lobos?");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("A. Colmeia");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("B. Alcateia");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("C. Manada");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("D. Bando");
+        return;
+    }
+
+    function void writeQ4() {
+        do Texto.centerText("1. Qual o coletivo de lobos?");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("A. Colmeia");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("B. Alcateia");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("C. Manada");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("D. Bando");
+        return;
+    }
+
+    function void writeQ5() {
+        do Texto.centerText("1. Qual o coletivo de lobos?");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("A. Colmeia");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("B. Alcateia");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("C. Manada");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("D. Bando");
+        return;
+    }
+}

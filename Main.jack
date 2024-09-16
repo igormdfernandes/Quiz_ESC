@@ -1,9 +1,38 @@
 class Main {
+
     function void main() {
-        var QuizGame game;
-        let game = QuizGame.new();
-        do game.run();
-        do game.dispose();
+        var char key;
+
+        do Texto.centerText("Bem vindo ao Quiz");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("Instrucoes");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("Aperte a tecla da opcao que achar estar correta");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("Acerte mais de 4 para ser aprovado");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("Aperte Enter para iniciar");
+        do Output.println();
+        do Output.println();
+
+        let key = 0;
+        while (~(key = 128)) {
+            let key = Keyboard.keyPressed();
+        }
+
+        do Tela.clearScreen();
+        do Tela.writeQ1();
+
+        let key = 0;
+        while (~(key = 65) & ~(key = 66) & ~(key = 67) & ~(key = 68)) {
+            let key = Keyboard.keyPressed();
+        }
+        do Tela.clearScreen();
+        do Tela.writeQ2();
         return;
     }
 }
