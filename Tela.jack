@@ -12,87 +12,96 @@ class Tela {
     }
 
     function void writeQ1() {
-        do Texto.centerText("1. Qual o coletivo de lobos?");
+        do Texto.centerText("1. Qual dos cursos a seguir nao e da area da tecnologia?");
         do Output.println();
         do Output.println();
-        do Texto.centerText("A. Colmeia");
+        do Texto.centerText("A. Ciencias da computacao");
         do Output.println();
         do Output.println();
-        do Texto.centerText("B. Alcateia");
+        do Texto.centerText("B. Analise de sistemas");
         do Output.println();
         do Output.println();
-        do Texto.centerText("C. Manada");
+        do Texto.centerText("C. Direito"); // Correta
         do Output.println();
         do Output.println();
-        do Texto.centerText("D. Bando");
+        do Texto.centerText("D. Sistemas de Informacao");
+        do Output.println();
+        do Output.println();
         return;
     }
 
     function void writeQ2() {
-        do Texto.centerText("1. Qual o maior planeta do sistema solar?");
+        do Texto.centerText("2. O que significa a sigla 'UFRPE'?");
         do Output.println();
         do Output.println();
-        do Texto.centerText("A. Urano");
+        do Texto.centerText("A. Unidade Fabril de Roupas de Pernambuco");
         do Output.println();
         do Output.println();
-        do Texto.centerText("B. Netuno");
+        do Texto.centerText("B. Universidade Federal Rural de Pernambuco"); // Correta
         do Output.println();
         do Output.println();
-        do Texto.centerText("C. Saturno");
+        do Texto.centerText("C. Uniao Fantastica Respeitada em Pernambuco");
         do Output.println();
         do Output.println();
-        do Texto.centerText("D. Jupiter");
+        do Texto.centerText("D. Utilidade Facilitadora Rapida com Premissa Especial");
+        do Output.println();
+        do Output.println();
         return;
     }
 
     function void writeQ3() {
-        do Texto.centerText("1. Qual o coletivo de lobos?");
+        do Texto.centerText("3. Qual das cadeiras a seguir nao e do segundo periodo do curso de BSI da UFRPE?");
         do Output.println();
         do Output.println();
-        do Texto.centerText("A. Colmeia");
+        do Texto.centerText("A. Elementos de Sistemas Computacionais");
         do Output.println();
         do Output.println();
-        do Texto.centerText("B. Alcateia");
+        do Texto.centerText("B. Fundamentos Matematicos para Sistemas de Informacao II");
         do Output.println();
         do Output.println();
-        do Texto.centerText("C. Manada");
+        do Texto.centerText("C. Projeto Interdisciplinar de Sistemas de informacao II");
         do Output.println();
         do Output.println();
-        do Texto.centerText("D. Bando");
+        do Texto.centerText("D. Fundamentos de Problemas Computacionais II"); // Correta
+        do Output.println();
+        do Output.println();
         return;
     }
 
     function void writeQ4() {
-        do Texto.centerText("1. Qual o coletivo de lobos?");
+        do Texto.centerText("4. Qual a linguagem utilizada no desenvolvimento do projeto final da cadeira de Elementos?");
         do Output.println();
         do Output.println();
-        do Texto.centerText("A. Colmeia");
+        do Texto.centerText("A. Java");
         do Output.println();
         do Output.println();
-        do Texto.centerText("B. Alcateia");
+        do Texto.centerText("B. Jack"); // Correta
         do Output.println();
         do Output.println();
-        do Texto.centerText("C. Manada");
+        do Texto.centerText("C. C++");
         do Output.println();
         do Output.println();
-        do Texto.centerText("D. Bando");
+        do Texto.centerText("D. Python");
+        do Output.println();
         return;
     }
 
     function void writeQ5() {
-        do Texto.centerText("1. Qual o coletivo de lobos?");
+        do Texto.centerText("5. Qual o professor responsavel pela cadeira de Elementos?");
         do Output.println();
         do Output.println();
-        do Texto.centerText("A. Colmeia");
+        do Texto.centerText("A. Marcelo");
         do Output.println();
         do Output.println();
-        do Texto.centerText("B. Alcateia");
+        do Texto.centerText("B. Rodrigo");
         do Output.println();
         do Output.println();
-        do Texto.centerText("C. Manada");
+        do Texto.centerText("C. Cleviton");
         do Output.println();
         do Output.println();
-        do Texto.centerText("D. Bando");
+        do Texto.centerText("D. Victor"); // Correta
+        do Output.println();
+        do Output.println();
         return;
     }
 }

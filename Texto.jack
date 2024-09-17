@@ -15,4 +15,16 @@ class Texto {
         do Output.printString(text);
         return;
     }
+
+    function void clearTextPosition() {
+        var int i;
+        let i = 0;
+
+        while (i < 59) {
+            do Output.println();
+            let i = i + 1;
+        }
+        
+        return;
+    }
 }
