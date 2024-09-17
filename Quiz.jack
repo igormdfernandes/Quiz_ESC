@@ -1,0 +1,171 @@
+class Quiz {
+    field int pontuacao;
+    
+    constructor Quiz new() {
+        return this;
+    }
+
+    method void dispose() {
+        do Memory.deAlloc(this);
+        return;
+    }
+
+    method void run() {
+        var char key;
+        var int i;
+        var boolean exit;
+        let exit = false;
+        while (~exit) {
+            let pontuacao = 0;
+            let i = 0;
+            while (i < 8){
+                do Output.println();
+                let i = i + 1;
+            }
+            do Tela.writeInit();
+
+            let key = 0;
+            while (~(key = 128)) {
+                let key = Keyboard.keyPressed();
+            }
+
+            // Processo Questão 1
+            do Texto.clearTextPosition();
+            do Tela.clearScreen();
+            do Tela.writeQ1();
+            let key = 0;
+            while (~(key = 65) & ~(key = 66) & ~(key = 67) & ~(key = 68)) {
+                let key = Keyboard.keyPressed();
+            }
+            if (key = 67) {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Correta");
+                let pontuacao = pontuacao + 20;
+            } else {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Errada");
+            }
+            do Tempo.wait(10);
+
+            // Processo Questão 2
+            do Texto.clearTextPosition();
+            do Tela.clearScreen();
+            do Tela.writeQ2();
+            let key = 0;
+            while (~(key = 65) & ~(key = 66) & ~(key = 67) & ~(key = 68)) {
+                let key = Keyboard.keyPressed();
+            }
+            if (key = 66) {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Correta");
+                let pontuacao = pontuacao + 20;
+            } else {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Errada");
+            }
+            do Tempo.wait(10);
+
+            // Processo Questão 3
+            do Texto.clearTextPosition();
+            do Tela.clearScreen();
+            do Tela.writeQ3();
+            let key = 0;
+            while (~(key = 65) & ~(key = 66) & ~(key = 67) & ~(key = 68)) {
+                let key = Keyboard.keyPressed();
+            }
+            if (key = 68) {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Correta");
+                let pontuacao = pontuacao + 20;
+            } else {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Errada");
+            }
+            do Tempo.wait(10);
+
+            // Processo Questão 4
+            do Texto.clearTextPosition();
+            do Tela.clearScreen();
+            do Tela.writeQ4();
+            let key = 0;
+            while (~(key = 65) & ~(key = 66) & ~(key = 67) & ~(key = 68)) {
+                let key = Keyboard.keyPressed();
+            }
+            if (key = 66) {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Correta");
+                let pontuacao = pontuacao + 20;
+            } else {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Errada");
+            }
+            do Tempo.wait(10);
+
+            // Processo Questão 5
+            do Texto.clearTextPosition();
+            do Tela.clearScreen();
+            do Tela.writeQ5();
+
+            let key = 0;
+            while (~(key = 65) & ~(key = 66) & ~(key = 67) & ~(key = 68)) {
+                let key = Keyboard.keyPressed();
+            }
+            if (key = 68) {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Correta");
+                let pontuacao = pontuacao + 20;
+            } else {
+                do Tela.clearScreen();
+                do Texto.centerText("Resposta Errada");
+            }
+            do Tempo.wait(10);
+
+            // Resultado Final
+            do Texto.clearTextPosition();
+            do Tela.clearScreen();
+            if (pontuacao > 70) {
+                do Texto.centerText("Voce marcou: ");
+                do Output.printInt(pontuacao);
+                do Output.printString(" pontos!");
+                do Output.println();
+                do Output.println();
+                do Texto.centerText("Parabens, voce mandou muito bem e foi aprovado!!");
+                do Output.println();
+                do Output.println();
+                do Texto.centerText("Aperte Q para encerrar o quiz");
+            } 
+            if (pontuacao < 70 & pontuacao > 30) {
+                do Texto.centerText("Voce marcou: ");
+                do Output.printInt(pontuacao);
+                do Output.printString(" pontos!");
+                do Output.println();
+                do Output.println();
+                do Texto.centerText("Sem desespero, tenho certeza de que na terceira VA");
+                do Output.println();
+                do Texto.centerText("voce se saira melhor.");
+                do Output.println();
+                do Output.println();
+                do Texto.centerText("Aperte Q para encerrar o quiz");
+            }
+            if (pontuacao < 30) {
+                do Texto.centerText("Voce marcou: ");
+                do Output.printInt(pontuacao);
+                do Output.printString(" pontos!");
+                do Output.println();
+                do Output.println();
+                do Texto.centerText("Mais foco na proxima, tem que correr atras do prejuizo.");
+                do Output.println();
+                do Output.println();
+                do Texto.centerText("Aperte Q para encerrar o quiz");
+            }
+            let key = 0;
+            while (~(key = 81)){
+                let key = Keyboard.keyPressed();
+            }
+            if (key = 81) {
+                let exit = true;
+            }
+        }
+        return;
+    }
+}
