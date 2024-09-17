@@ -11,6 +11,25 @@ class Tela {
         return;
     }
 
+    function void writeInit(){
+        do Texto.centerText("Bem vindo ao Quiz");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("Instrucoes");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("Aperte a tecla da opcao que achar estar correta");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("Acerte mais de 4 para ser aprovado");
+        do Output.println();
+        do Output.println();
+        do Texto.centerText("Aperte Enter para iniciar");
+        do Output.println();
+        do Output.println();
+        return;
+    }
+
     function void writeQ1() {
         do Texto.centerText("1. Qual dos cursos a seguir nao e da area da tecnologia?");
         do Output.println();
